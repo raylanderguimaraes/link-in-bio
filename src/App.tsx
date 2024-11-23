@@ -1,6 +1,7 @@
 import Footer from "./components/Footer.tsx";
 import Header from "./components/Header.tsx";
 
+
 export default function App() {
   return (
     <div className="w-full flex flex-col h-dvh bg-gradient-to-b from-orange-600 to-orange-300 pt-8 pb-2 items-center">
