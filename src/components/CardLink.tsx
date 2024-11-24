@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 interface CardProps {
   //   card_id: string;
   URL: string;
-  title: string | "";
+  title: string;
   className?: string;
 }
 
@@ -18,7 +18,10 @@ export default function CardLink({
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className={`w-full list-none bg-white rounded-xl p-4 text-center shadow-lg ${className}`}>
-      <a target="_blank" rel="noopener noreferrer" href={URL}>
+      <a
+        target={URL === "/" ? "_self" : "_blank"}
+        rel="noopener noreferrer"
+        href={URL}>
         <p>{title}</p>
       </a>
     </motion.li>

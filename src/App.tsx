@@ -19,7 +19,7 @@ export default function App() {
     <div className="w-full flex flex-col h-dvh bg-gradient-to-b from-orange-600 to-orange-300 pt-8 pb-2 items-center">
       <Header />
       {/* Fazer um efeito bacana de hover */}
-      {/* Colocar efeito utilizando o frame motion */}
+      {/* Fazer efeito dos CardLinks aparecerem na tela ce baixo para cima, com framer motion */}
 
       <main className="w-11/12 md:w-[600px] flex flex-col flex-grow gap-4">
         {URLS_ADDRESS.map((item, index) => {
